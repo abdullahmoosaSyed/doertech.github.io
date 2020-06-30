@@ -284,19 +284,10 @@ li{
 	color: #aaa;
 	height: 80vh;
 	padding: 250px;
+        width: 100%;
+	display: inline-block;
 }
 
-/* .about-section img{
-	height: 70%;
-	width: 90%;
-	bottom: 0;
-	right: 20%;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	margin-left: 40px;
-	background-position: center;
-
-} */
 .section-title{} .section-subtitle{
     margin-bottom: 7px;
     padding-left: 7px;
@@ -316,17 +307,17 @@ li{
     font-size: 30px;
     line-height: 1.27;
     font-weight: 300;
+    text-align: center;
 }
  
 .section-main-title strong{
     font-weight: 600;
+    margin-left:4px;
 }  
 
 
 
-.about-item p{
-	text-align: center;
-}
+
 
 
 .about-box .nav-link:hover{
@@ -551,16 +542,7 @@ footer {
 		background-position: center;
 		background-repeat: no-repeat;
 	}
-	.about-section img{
-		height: 300;
-		width: 300;
-		bottom: 0;
-		right: 20%;
-		margin-top: 50px;
-		margin-bottom: 50px;
-		margin-left: 20px;
-		background-position: center;
-	}
+	
 	.header::before{
 		content: "";
 		position: absolute;
@@ -572,13 +554,48 @@ footer {
 		z-index: -1;
 		
 	}
+        
 
 	.contact{
 		background: linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.63)),url(contact.jpg);
 		background-position: bottom;
 		background-size: cover;
 		background-repeat: no-repeat;
+                margin-bottom:30px;
 	
+	}
+        .about-section{
+		color: #aaa;
+		height: 50vh;
+		position: relative;
+		width: 100%;
+		
+	}
+
+	.about-item{
+		width: 500px;
+	}
+	.about-item p{
+		position: absolute;
+		top: 50%;
+    right: 30%;
+    left: 5%;
+		transform: translate(-1%, -40%);
+       font-size: small !important;
+		text-align: center;
+		display: inline-block !important;
+	}
+
+
+	.section-title{} .section-subtitle{
+		position: absolute;
+		top: 5%;
+		left: 30%;
+	}
+	.section-main-title{
+		position: absolute;
+		top: 15%;
+		left: 10%;
 	}
 	}
   
